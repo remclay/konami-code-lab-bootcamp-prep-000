@@ -2,8 +2,7 @@ const code = [38, 38, 40, 40, 37, 39, 37, 39, 66, 65]
 
 function init() {
   var i = 0;
-  document.addEventListener('keydown', keydownTracker);
-  function keydownTracker(e){
+  document.body.addEventListener('keydown', function keydownTracker(e) {
     const keyValue = parseInt(e.which || e.detail);
     if (key === code[i]) {
       i++;
@@ -14,5 +13,5 @@ function init() {
     } else {
       index = 0;
     }
-  }
+  })
 }
