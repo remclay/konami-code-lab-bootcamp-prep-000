@@ -5,7 +5,7 @@ function init() {
   let i = 0;
 
   body.addEventListener('keydown', (event));
-  function keydownTracker(e){
+  function keydownTracker(event){
     const keyValue = parseInt(event.key);
     debugger
     if (key === code[i]) {
