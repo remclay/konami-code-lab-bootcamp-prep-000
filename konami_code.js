@@ -5,8 +5,7 @@ function init() {
   let i = 0;
 
   body.addEventListener("keydown", keydownTracker);
-  function keydownTracker(){
-
+  function keydownTracker(e){
     const key = parstInt(e.detail || e.which);
     console.log((e.detail) 'eD')
     debugger
