@@ -4,9 +4,9 @@ function init() {
   var body = document.getElementsByTagName('body');
   let i = 0;
 
-  body.addEventListener('keydown', keydownTracker());
-  function keydownTracker(event){
-    const keyValue = parseInt(event.key);
+  body.addEventListener('keydown', keydownTracker);
+  function keydownTracker(e){
+    const keyValue = parseInt(e.which || e.detail);
     debugger
     if (key === code[i]) {
       i++;
