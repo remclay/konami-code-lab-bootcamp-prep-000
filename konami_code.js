@@ -4,7 +4,7 @@ function init() {
   var body = document.getElementsByTagName('body');
   let i = 0;
 
-  body.addEventListener("keydown", keydownTracker{
+  body.addEventListener('keydown', keydownTracker());
   function keydownTracker(e){
     const key = parstInt(e.detail || e.which);
     debugger
@@ -17,6 +17,5 @@ function init() {
     } else {
       index = 0;
     }
-  })
-}
+  }
 }
