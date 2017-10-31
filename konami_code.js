@@ -9,6 +9,7 @@ function init() {
 
     const key = parstInt(e.detail || e.which);
     console.log((e.detail) 'eD')
+    debugger
     if (key === code[i]) {
       i++;
       if (i === code.length) {
